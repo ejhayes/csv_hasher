@@ -1,6 +1,6 @@
 # CsvHasher
 
-TODO: Write a gem description
+This takes a csv file and replaces a user specified column with a a hash of the same value.
 
 ## Installation
 
@@ -18,11 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can experiment with this on the console by doing:
+
+    bundle exec rake console
+
+### As a library
+
+    require 'csv_hasher'
+
+### Or the executable
+
+    hash_csv --file <filename> --column UDID --hash-with md5 --output-to /path/to/file.csv
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/csv_hasher/fork )
+1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "csv_hasher"
   spec.version       = CsvHasher::VERSION
   spec.authors       = ["Eric Hayes"]
-  spec.email         = ["eric@inflection.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.email         = ["ejhayes@jacobianengineering.com"]
+  spec.summary       = %q{Outputs a CSV file with a specified column replaced with a corresponding hash}
+  spec.description   = %q{Outputs a CSV file with a specified column replaced with a corresponding hash}
   spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.license       = "Proprietary"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
