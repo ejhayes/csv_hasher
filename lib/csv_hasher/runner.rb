@@ -37,8 +37,8 @@ module CsvHasher
 
   class Runner
     def initialize(opts)
-      target_filename = opts[:file]
-      source_filename = opts[:output_to]
+      source_filename = opts[:file]
+      target_filename = opts[:output_to]
 
       @target_key_regex = opts[:target_key_regex]
       @target_column = opts[:target_column]
