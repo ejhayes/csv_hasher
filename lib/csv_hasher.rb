@@ -3,6 +3,7 @@ require "csv_hasher/runner"
 require 'csv'
 require 'json'
 require 'ruby-progressbar'
+require 'digest'
 
 module CsvHasher
   
