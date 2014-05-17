@@ -28,7 +28,7 @@ You can experiment with this on the console by doing:
 
 ### Or the executable
 
-    hash_csv --file <filename> --column UDID --hash-with md5 --output-to /path/to/file.csv
+    bundle exec bin/csv_hasher --file test_data.csv --target-key-regex ".*ohyes.*" --target-column "_raw" --hash-with "MD5"
 
 ## Contributing
 
