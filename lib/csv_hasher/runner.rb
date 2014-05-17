@@ -4,7 +4,7 @@ module CsvHasher
       @source_filename = params[:source_filename]
       @target_filename = params[:target_filename] || "hashed_#{@source_filename}"
 
-      @lines = CSV.open(@source_filename).readlines.size
+      @lines = %x{wc -l #{@source_filename}}.split.first.to_i
 
       # open up our target csv and write the same headers as we have
       # for hte source target
