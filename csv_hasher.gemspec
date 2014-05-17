@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "csv_hasher"
   spec.version       = CsvHasher::VERSION
   spec.authors       = ["Eric Hayes"]
-  spec.email         = ["ejhayes@jacobianengineering.com"]
+  spec.email         = ["eric@deployfx.com"]
   spec.summary       = %q{Outputs a CSV file with a specified column replaced with a corresponding hash}
   spec.description   = %q{Outputs a CSV file with a specified column replaced with a corresponding hash}
   spec.homepage      = ""
