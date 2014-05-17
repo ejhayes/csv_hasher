@@ -4,8 +4,8 @@ module CsvHasher
       @source_filename = params[:source_filename]
       @target_filename = params[:target_filename] || "hashed_#{@source_filename}"
 
-      puts "Counting lines of #{@source_filename}"
-      @lines = %x{wc -l #{@source_filename}}.split.first.to_i
+      puts "Counting lines of #{@source_filename.path}"
+      @lines = %x{wc -l #{@source_filename.path}}.split.first.to_i
 
       # open up our target csv and write the same headers as we have
       # for hte source target
